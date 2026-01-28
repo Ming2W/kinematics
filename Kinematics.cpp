@@ -59,10 +59,10 @@ Kinematics::output Kinematics::getRPM(float linear_x, float linear_y, float angu
   //front-left motor
   rpm.motor1 = x_rpm_ - y_rpm_ - tan_rpm_;
   //rear-left motor
-  rpm.motor3 = x_rpm_ + y_rpm_ - tan_rpm_;
+  rpm.motor2 = x_rpm_ + y_rpm_ - tan_rpm_;
 
   //front-right motor
-  rpm.motor2 = x_rpm_ + y_rpm_ + tan_rpm_;
+  rpm.motor3 = x_rpm_ + y_rpm_ + tan_rpm_;
   //rear-right motor
   rpm.motor4 = x_rpm_ - y_rpm_ + tan_rpm_;
 
